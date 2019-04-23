@@ -1,0 +1,156 @@
+/*  Bailie Delpire
+	Csc 337, Spring 2019
+	Final Project, calendar.css 
+
+	This file is the style sheet for calendar.html */
+
+body {
+	background-color: #d9ecd0;
+	font-family: Georgia, sans-serif;
+	font-size: 12pt;
+}
+
+h2 {
+	margin: 10px;
+}
+
+#main {
+	display: flex;
+}
+
+#month {
+	margin-bottom: 10px;
+}
+
+#events, #create, .day {
+	background-color: white;
+	border: 2px solid #77a8a8;
+	border-radius: 10px;
+}
+
+.day {
+	border: 2px solid #b9b0b0;
+}
+
+#create {
+	padding: 5px;
+}
+
+#sidebar {
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	min-width: 300px;
+}
+
+#weekDays {
+	display: grid;
+	grid-template-rows: 25px;
+	grid-template-columns: repeat(7, 135px);
+	margin: 20px;
+	text-align: center;
+}
+
+.days {
+	display: grid;
+	grid-template-rows: repeat(6,125px);
+	grid-template-columns: repeat(7, 135px);
+	margin: 20px;
+}
+
+#events {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	max-width: 300px;
+	min-height: 150px;
+}
+
+#eventDetails {
+	padding: 5px;
+	text-align: left;
+}
+
+.weekDay {
+	text-align: center;
+}
+
+.pastDay {
+	background-color: #e6e6e6;
+	border: 2px solid #b9b0b0;
+	border-radius: 10px;
+}
+
+.today {
+	background-color: white;
+	border: 2px solid #77a8a8;
+	border-radius: 10px;
+}
+
+.num, .numToday {
+	background-color: #b9b0b0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-align: center;
+}
+
+.numToday {
+	background-color: #77a8a8;
+}
+
+legend {
+	border-bottom: 1px solid #77a8a8;
+	padding: 2px;
+	text-align: left;
+	width: 100%;
+}
+
+fieldset {
+	border: none;
+}
+
+label {
+	font-size: 10pt;
+}
+
+.time {
+	width: 20px;
+}
+
+textarea {
+	resize: vertical;
+}
+
+button:disabled {
+	background-color: lightgray;
+}
+
+.hover {
+	border: 2px solid #77a8a8;;
+}
+
+.info > div {
+	background-color: #e6d5d5;
+	font-family: Bookman, serif;
+	font-size: 10pt;
+	margin-bottom: 3px;
+}
+
+.info {
+	height: 100px;
+	overflow: auto;
+}
+
+p {
+	margin: 2px;
+}
+
+input[type=checkbox]:checked + label {
+	color: gray;
+	text-decoration: line-through;
+}
+
+#float {
+	font-size: 10pt;
+	float: right;
+	margin: 10px;
+}
