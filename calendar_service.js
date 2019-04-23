@@ -64,4 +64,4 @@ app.get('/', function (req, res) {
 	res.send(JSON.stringify(json));
 });
 
-app.listen(3000);
+app.listen(process.env.PORT);
