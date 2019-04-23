@@ -289,7 +289,7 @@
 
 	/* Uses a fetch to get info from a file to add events to the page. */
 	function fetchEvents() {
-		let url = "http://localhost:3000";
+		let url = "http://bailiecd-calendar.herokuapp.com:process.env.PORT";
 		fetch(url)
 			.then(checkStatus)
 			.then(function(responseText) {
