@@ -1,0 +1,22 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "calendar",
+  "main": "calendar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uacs337spring2019/final-project-bailied.git"
+  },
+  "keywords": [
+    "calendar"
+  ],
+  "author": "Bailie Delpire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uacs337spring2019/final-project-bailied/issues"
+  },
+  "homepage": "https://github.com/uacs337spring2019/final-project-bailied#readme"
+}
