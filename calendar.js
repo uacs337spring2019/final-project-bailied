@@ -26,7 +26,6 @@
 		document.getElementById("today").onclick = thisMonth;
 		document.getElementById("submit").onclick = send;
 		fetchEvents();
-		setInterval(fetchEvents, 5000);
 	}
 
 	/* Creates json info for the length and start days of each month. */
@@ -147,6 +146,7 @@
 			.catch(function(error) {
 				console.log(error);
 			});
+		fetchEvents();
 	}
 
 	/* Stores an element's class name in a global variable and adds
