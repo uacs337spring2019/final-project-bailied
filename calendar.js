@@ -137,7 +137,7 @@
 			body: JSON.stringify(event)
 		};
 
-		let url = "http://localhost:3000";
+		let url = "http://bailiecd-calendar3.herokuapp.com";
 		fetch(url, fetchOptions)
 			.then(checkStatus)
 			.then(function(responseText) {
@@ -289,7 +289,7 @@
 
 	/* Uses a fetch to get info from a file to add events to the page. */
 	function fetchEvents() {
-		let url = "http://bailiecd-calendar2.herokuapp.com";
+		let url = "http://bailiecd-calendar3.herokuapp.com";
 		fetch(url)
 			.then(checkStatus)
 			.then(function(responseText) {
