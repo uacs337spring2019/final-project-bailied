@@ -304,7 +304,6 @@
 				}
 
 				// Add any info received from the fetch.
-				console.log(responseText);
 				let json = JSON.parse(responseText);
 				let events = json.events;
 				for (let i = 0; i < events.length - 1; i++) {
