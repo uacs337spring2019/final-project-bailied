@@ -1,1 +1,82 @@
+<!--Bailie Delpire
+	Csc 337, Spring 2019
+	Final Project, calendar.html 
+-->
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="calendar.css" />
+		<script type="text/javascript" src="calendar.js"></script>
+		<title>2019 Calendar</title>
+	</head>
+
+	<body>
+		<div id="main">
+			<div id="sidebar">
+				<h1 id="month"></h1>
+				<button id="<">&lt;</button><button id="today">Today</button><button id=">">></button>
+				<div id="events">
+					<h2>Event Details</h2>
+					<hr>
+					<div id="eventDetails">
+					</div>
+				</div>
+
+				<div id="create">
+					<h2>Add an Event</h2>
+					<hr>
+					<fieldset>
+						<legend>Type of Event: </legend>
+						<label><input type="radio" name="type" value="event" checked="checked" /> Event</label>
+						<label><input type="radio" name="type" value="todo" /> To Do</label>
+						<label><input type="radio" name="type" value="clear" /> Clear</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Date: </legend>
+						<input type="date" name="date" id="date"/>
+					</fieldset>
+
+					<fieldset>
+						<legend>Time: </legend>
+						<input type="text" id="hour" class="time" pattern="[0-9]+"/>:<input type="text" id="minute" class="time" pattern="[0-9]+"/>
+						<label><input type="radio" value="am" name="time"/> AM</label>
+						<label><input type="radio" value="pm" name="time"/> PM</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Title: </legend>
+						<input type="text" id="title" />
+					</fieldset>
+
+					<fieldset>
+						<legend>Details: </legend>
+						<textarea id="details"></textarea>
+					</fieldset>
+
+					<button id="submit">Submit</button>
+				</div>
+			</div>
+
+			<div>
+				<div id="weekDays">
+					<div>Sunday</div>
+					<div>Monday</div>
+					<div>Tuesday</div>
+					<div>Wednesday</div>
+					<div>Thursday</div>
+					<div>Friday</div>
+					<div>Saturday</div>
+				</div>
+				<div id="calendar">
+				</div>
+			</div>
+		</div>
+
+		<p id="float">
+			Created by Bailie Delpire
+		</p>
+
+	</body>
+</html>
